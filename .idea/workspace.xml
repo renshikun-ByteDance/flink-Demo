@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d36c3826-6bc5-436b-9f85-916f5e6964a9" name="Default Changelist" comment="" />
+    <list default="true" id="d36c3826-6bc5-436b-9f85-916f5e6964a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/operator/beans/student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operator/beans/student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/operator/source/fromCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operator/source/fromCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/operator/beans/student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/operator/beans/student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/operator/source/fromCollection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/operator/source/fromCollection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/operator/source/fromKafka.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/operator/source/fromKafka.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +37,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -39,6 +50,7 @@
   </component>
   <component name="ProjectId" id="22B3t1XufwbiMVdmA3EC6UjkkgX" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -59,37 +71,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.fromKafka">
+  <component name="RunManager" selected="Application.SideOutPut">
+    <configuration name="SideOutPut" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="operator.processFunction.SideOutPut" />
+      <module name="flink-Demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="operator.processFunction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="flist" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="FlinkFunction" />
       <module name="flink-Demo" />
       <option name="PROGRAM_PARAMETERS" value="--hostname 192.168.159.14 --port 8888" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="fromCollection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="operator.source.fromCollection" />
-      <module name="flink-Demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="operator.source.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="fromFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="operator.source.fromFile" />
-      <module name="flink-Demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="operator.source.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,11 +106,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="transform_Base" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="operator.transform.transform_Base" />
+      <module name="flink-Demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="operator.transform.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="transform_Reduce" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="operator.transform.transform_Reduce" />
+      <module name="flink-Demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="operator.transform.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="transform_RollingAggregation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="operator.transform.transform_RollingAggregation" />
+      <module name="flink-Demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="operator.transform.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SideOutPut" />
+        <item itemvalue="Application.transform_RollingAggregation" />
+        <item itemvalue="Application.transform_Reduce" />
+        <item itemvalue="Application.transform_Base" />
         <item itemvalue="Application.fromKafka" />
-        <item itemvalue="Application.fromCollection" />
-        <item itemvalue="Application.fromFile" />
       </list>
     </recent_temporary>
   </component>
@@ -134,10 +174,22 @@
       <workItem from="1646446622666" duration="4573000" />
       <workItem from="1646469034322" duration="2104000" />
       <workItem from="1646615564052" duration="6970000" />
+      <workItem from="1646788897375" duration="35200000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -1,16 +1,38 @@
 package operator.beans;
 
+/**
+ * POJO对象（Plain Ordinary Java Object），简单普通的java对象
+ * 1.必须有无参构造函数
+ * 2.有一些private的参数作为对象的属性，然后针对每一个参数定义get和set方法访问的接口。
+ * 3.没有从任何类继承、也没有实现任何接口，更没有被其它框架侵入的java对象
+ */
+
 public class student {
+    private String id;
     private String name;
     private int age;
     private String phone;
     private String adress;
 
-    public student(String name, int age, String phone, String adress) {
+    //POJO类必须有无参构造函数
+    public student() {
+
+    }
+
+    public student(String id, String name, int age, String phone, String adress) {
+        this.id = id;
         this.name = name;
         this.age = age;
         this.phone = phone;
         this.adress = adress;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -45,14 +67,15 @@ public class student {
         this.adress = adress;
     }
 
+
     @Override
     public String toString() {
         return "student{" +
-                "name='" + name + '\'' +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
                 ", age=" + age +
-                ", phone=" + phone +
+                ", phone='" + phone + '\'' +
                 ", adress='" + adress + '\'' +
                 '}';
     }
-
 }
